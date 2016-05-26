@@ -12,14 +12,11 @@
  */
 
 #include <cstdlib>
+#include "include/Application.h"
 
-using namespace std;
-
-/*
- * 
- */
 int main(int argc, char** argv) {
-
-    return 0;
+    std::string sName = "Allegro 5 test application";
+    Application *oApp = new Application(500, 500, sName);
+    oApp->initApp();
 }
 
