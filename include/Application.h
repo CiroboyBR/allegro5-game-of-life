@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   Application.h
  * Author: aalmunia
@@ -17,6 +11,9 @@
 #include <stdio.h>
 #include <iostream>
 
+// Class 'Bitmap'
+#include "Bitmap.h"
+
 #ifndef APPLICATION_H
 #define APPLICATION_H
 
@@ -27,7 +24,7 @@ public:
     Application(unsigned int iWidth, unsigned int iHeight, std::string sName);
     Application(unsigned int iWidth, unsigned int iHeight, char* sName);
     bool isAppReady();
-    bool isAppInit();    
+    bool isAppInit();
     void initApp();
     virtual ~Application();
 private:
@@ -40,6 +37,7 @@ private:
     ALLEGRO_COLOR colGreen;
     ALLEGRO_COLOR colBlue;
     void initColors();
+    std::vector<Bitmap> vecBitmaps;
 };
 
 #endif /* APPLICATION_H */
