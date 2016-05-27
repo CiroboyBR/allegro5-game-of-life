@@ -36,7 +36,9 @@ int main(int argc, char** argv) {
     oBitmap->fromFile(sBitmapName);
     oBitmap->toFile("/home/aalmunia/CodeTesting/cpp/Life/girl.bmp");
     
-    // Once here, the eternal loop starts and does not end until we exit the program
+    // Once here, the eternal loop starts and does not end until we exit the program.
+    // Therefore, we must have configured everything before.
+    // In other words, the main game loop, answering to 
     oApp->initApp();
 }
 
