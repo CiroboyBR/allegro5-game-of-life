@@ -29,12 +29,12 @@ int main(int argc, char** argv) {
     std::string sName = "Allegro 5 test application";
     Application *oApp = new Application(500, 500, sName);
     
-    std::string sBitmapName = "/home/aalmunia/CodeTesting/cpp/Life/resources/bmplogo.bmp";
-    std::string sExtension = ".jpg";
+    std::string sBitmapName = "/home/aalmunia/CodeTesting/cpp/Life/resources/lena512.bmp";
+    std::string sExtension = ".bmp";
     Bitmap *oBitmap = new Bitmap();
     oBitmap->setDefaultExtension(sExtension);
     oBitmap->fromFile(sBitmapName);
-    oBitmap->toFile("/home/aalmunia/CodeTesting/cpp/Life/bmplogo2.bmp");
+    oBitmap->toFile("/home/aalmunia/CodeTesting/cpp/Life/girl.bmp");
     
     // Once here, the eternal loop starts and does not end until we exit the program
     oApp->initApp();

@@ -19,7 +19,7 @@ public:
     Bitmap(std::string sFilePath, std::string sExtension);
     void fromFile(std::string sFilePath);
     void randomBitmap();
-    ALLEGRO_BITMAP* randomBitmap();
+    ALLEGRO_BITMAP* getRandomBitmap();
     void toFile(std::string sFilePath);
     void toFile(std::string sFilePath, std::string sExtension);
     void setDefaultExtension(std::string sExtension);

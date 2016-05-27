@@ -57,7 +57,7 @@ void Bitmap::randomBitmap() {
     
 }
 
-ALLEGRO_BITMAP* Bitmap::randomBitmap() {
+ALLEGRO_BITMAP* Bitmap::getRandomBitmap() {
     
 }
 
